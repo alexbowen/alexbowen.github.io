@@ -108,6 +108,6 @@ var setup = function() {
       basketTest();
       cacheTest();
     }
-  };
+};
 
-  setup();
+setup();
