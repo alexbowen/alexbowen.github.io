@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <script src="basket.js"></script>
+    <script src="jquery.js"></script>
 
 <script>
 
@@ -39,7 +40,7 @@ Storage.prototype.getAverage = function (key) {
 }
 
 var teardown = function() {
-  basket.remove("jquery");
+  basket.remove("basket-jquery.js");
 };
 
 var setup = function() {
@@ -55,9 +56,8 @@ var setup = function() {
 
       var cacheTest = function () {
 
-        var now = new Date().getTime();
+        var now = new Date().getTime(), xhr = new XMLHttpRequest();
 
-        var xhr = new XMLHttpRequest();
         xhr.open("GET", url);
         xhr.onreadystatechange = function(xhrEvent) {
 
@@ -76,8 +76,8 @@ var setup = function() {
         var now = new Date().getTime();
 
         basket.require({ url: "jquery.js"}).then(function() {
-            var endBasket = new Date().getTime();
-            var timeBasket = endBasket - now;
+          
+            var endBasket = new Date().getTime(), timeBasket = endBasket - now;
 
             window.localStorage.addToArray("basketResults", timeBasket);
 
