@@ -57,14 +57,14 @@ person.getName();  //what does this do?
 
 //tell me what you think about this code snippet
 
-for (var i = 0; i < rows; i++) {
+for (i = 0; i < rows; i++) {
 
     $tr = $('<tr></tr>');
 
-    for (var j = 0; j < this.data.length; j++) {
+    for (j = 0; j < this.data.length; j++) {
         $tr.append('<td>' + this.data[j]['id'] + '</td>');
     }
-    
+
     $tr.appendTo($tbody);
 }
 

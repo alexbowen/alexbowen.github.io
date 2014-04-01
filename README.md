@@ -31,7 +31,7 @@ spacing must be used correctly
 
 ```var myFunction = function (arg1, arg2) { ... };```
 
-global scope variables are considered a bad idea unless an absolute necessity and then they could be namespaced.
+global scope variables are considered a bad idea unless an absolute necessity and then they should be namespaced.
 
 
 return
