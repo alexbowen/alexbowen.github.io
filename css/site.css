@@ -1,0 +1,15 @@
+@import url('normalize.css');
+
+body {
+    padding:1em;
+    font-family:tahoma;
+}
+
+.date {
+    font-style:italic;
+    font-size:1em;
+}
+
+ul.menu {
+    list-style-type: none
+}

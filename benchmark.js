@@ -33,7 +33,7 @@ var drawGraph = function () {
                 type: 'bar'
             },
             title: {
-                text: 'Basket JS Benchmark'
+                text: ''
             },
             xAxis: {
                 categories: ['Mechanism']
