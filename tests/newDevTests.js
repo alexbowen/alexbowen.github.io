@@ -46,34 +46,37 @@ person.prototype = {
         logName();
     },
 
-    logName() {
+    logName : function () {
         console.log( "Name:" + this.name );
     }
 }
 
-person.logName();  //what does this do?
+person.getName();  //what does this do?
 
 //---------------------------------------------
 
 //tell me what you think about this code snippet
 
 for (var i = 0; i < rows; i++) {
+
     $tr = $('<tr></tr>');
+
     for (var j = 0; j < this.data.length; j++) {
         $tr.append('<td>' + this.data[j]['id'] + '</td>');
     }
+    
     $tr.appendTo($tbody);
 }
 
 //tell me where you might see this:
 
 return {
-    restrict: 'A',
-    require: '^ngCity',
-    scope: {
+    restrict : 'A',
+    require : '^ngCity',
+    scope : {
       ngCity: '@'
     },
-    link: function(scope, element, attrs) {
+    link : function(scope, element, attrs) {
       // code
     }
 }
