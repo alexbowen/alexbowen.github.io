@@ -83,22 +83,22 @@ return {
 
 //tell me about the following code snippets
 
-function foo() {
-    var bar = new LargeObject();
-    bar.someCall();
+function myFunction() {
+    var myObject = new LargeObject();
+    myObject.someCall();
 }
 
-var b = foo();
+var b = myFunction();
 
 //---------------------------------------------
 
-function foo() {
-    var bar = new LargeObject();
-    bar.someCall();
-    return bar;
+function myFunction() {
+    var myObject = new LargeObject();
+    myObject.someCall();
+    return myObject;
 }
 
-var b = foo();
+var b = myFunction();
 
 //tell me what you think about this code snippet
 
@@ -106,12 +106,52 @@ Array.prototype.join = function (array1, array2) {
     return array1 + array2;
 }
 
+//---------------------------------------------
+
+var x = 3, y = 2;
+
+(function (y) {
+    console.log(y); //?
+})(x);
+
+//---------------------------------------------
+
+var x = 2;
+
+(function (x) {
+    var z = x;
+})(x);
+
+console.log(z); //?
+
+//---------------------------------------------
+
+var x = 2;
+
+(function (y) {
+    z = y;
+})(x);
+
+console.log(z); //?
+
+//---------------------------------------------
+
+var x = 2;
+
+var myFunction = function () {
+    x++;
+};
+
+myFunction();
+
+console.log(x);  //?
+
+//---------------------------------------------
+
 //QUESTIONs
 
 //1. what is event delegation?
 
-//2. what is jQuery and what is it not?
+//2. describe what the difference between apply and call is?
 
-//3. describe what the difference between apply and call is?
-
-//4. would you consider it best to load CSS or javascript first and why?
+//3. would you consider it best to load CSS or javascript first and why?
