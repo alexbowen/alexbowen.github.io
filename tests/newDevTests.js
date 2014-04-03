@@ -68,13 +68,13 @@ for (i = 0; i < rows; i++) {
     $tr.appendTo($tbody);
 }
 
-//tell me where you might see this:
+//tell me where you might see this and describe what you see:
 
 return {
     restrict : 'A',
-    require : '^ngCity',
+    require : '^ngPerson',
     scope : {
-      ngCity: '@'
+      ngPerson: '@'
     },
     link : function(scope, element, attrs) {
       // code
@@ -105,6 +105,8 @@ var b = myFunction();
 Array.prototype.join = function (array1, array2) {
     return array1 + array2;
 }
+
+//what is logged in the console as a result of the following:
 
 //---------------------------------------------
 
@@ -139,12 +141,12 @@ console.log(z); //?
 var x = 2;
 
 var myFunction = function () {
-    x++;
+    var z = x++;
 };
 
 myFunction();
 
-console.log(x);  //?
+console.log(z);  //?
 
 //---------------------------------------------
 
@@ -155,3 +157,14 @@ console.log(x);  //?
 //2. describe what the difference between apply and call is?
 
 //3. would you consider it best to load CSS or javascript first and why?
+
+//4. explain differences and/or pros and cons of responsive/adaptive design
+
+//5. what do you understand by semantic code
+
+//6. what is wai-aria
+
+//7 tell me what CSS specificty means
+
+//8. how can you optimize javascript on a webpage
+
